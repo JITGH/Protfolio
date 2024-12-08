@@ -55,7 +55,7 @@
         <div class="home-sci">
           <a href="https://leetcode.com/u/gjit515/" target="_blank">
             <img
-              src="./assets/leetcode.png"
+              src="/assets/leetcode.png"
               alt="LeetCode Logo"
               style="width: 20px; height: 20px; vertical-align: middle" />
             <i class="bx bxl-code-alt"></i
@@ -76,7 +76,7 @@
           ></a>
           <a href="https://codeforces.com/profile/gjit515" target="_blank">
             <img
-              src="./assets/code-forces.png"
+              src="/assets/code-forces.png"
               alt="Codeforces Logo"
               style="width: 20px; height: 20px"
             />
@@ -85,7 +85,7 @@
       </div>
       <!--PIC-->
       <div class="my-img right">
-        <img src="./assets/Screenshot 2024-12-05 132551.png" alt="" />
+        <img src="/assets/Screenshot 2024-12-05 132551.png" alt="" />
       </div>
     </section>
 
@@ -93,7 +93,7 @@
     <section class="about" id="about">
       <div class="about-img left">
         <img
-          src="./assets/Screenshot 2024-12-05 133831.png"
+          src="/assets/Screenshot 2024-12-05 133831.png"
           alt=""
           class="about-img-2"
         />
@@ -240,7 +240,7 @@
 
       <div class="portfolio-container bottom">
         <div class="portfolio-box">
-          <img src="./assets/Beige and Brown Professional Corporate Law Firm Presentation.jpg" alt="" class="resizes"/>
+          <img src="/assets/Beige and Brown Professional Corporate Law Firm Presentation.jpg" alt="" class="resizes"/>
           <div class="portfolio-layer">
             <h4>TrialTech</h4>
             <p>
@@ -258,7 +258,7 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="./assets/pexels-abby-chung-371167-1106468.jpg" alt="" />
+          <img src="/assets/pexels-abby-chung-371167-1106468.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>E-Library</h4>
             <p>
@@ -273,7 +273,7 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="./assets/todo-home.jpg" alt="" />
+          <img src="/assets/todo-home.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Todo List</h4>
             <p>
@@ -293,7 +293,7 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="./assets/blog.jpg" alt="" />
+          <img src="/assets/blog.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>StickyNote</h4>
             <p>
@@ -310,7 +310,7 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="./assets/tic-home.jpg" alt="" />
+          <img src="/assets/DALL·E 2024-12-08 12.10.15 - A sleek and modern web app front page design for a background changer app. The interface includes a vibrant header with the title 'Background Changer,.webp" alt="" class="resize"/>
           <div class="portfolio-layer">
             <h4>Background Changer</h4>
             <p>Everyone can change background in one click! Play it right now!</p>
@@ -329,7 +329,7 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="./assets/bhoj.jpg" alt="" class="resize"/>
+          <img src="/assets/bhoj.jpg" alt="" class="resize"/>
           <div class="portfolio-layer">
             <h4>Bhoj-Resturant</h4>
             <p>Wanna feel hungry! don't think twice for order!</p>
@@ -406,38 +406,6 @@
     </footer>
 
     <script src="app.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function() {
-    emailjs.init("CgB5WhTSFJl5RwHX7"); // Replace with your EmailJS User ID
-  })();
-
-  document.querySelector("form").addEventListener("submit ", function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Get form values
-    const name = document.querySelector('input[placeholder="Full Name"]').value;
-    const email = document.querySelector('input[placeholder="Email"]').value;
-    const phone = document.querySelector('input[placeholder="Phone No"]').value;
-    const subject = document.querySelector('input[placeholder="Email Subject"]').value;
-    const message = document.querySelector('textarea[placeholder="Your Message"]').value;
-    console.log("Form Values:", { name, email, phone, subject, message });
-    // Send email using EmailJS
-    emailjs.send("service_6ftpuxm", "template_ywvruik", {
-      from_name: name,
-      from_email: email,
-      phone_no: phone,
-      subject: subject,
-      message: message
-    })
-    .then(function(response) {
-      console.log("SUCCESS!", response.status, response.text);
-      alert("Your message has been sent successfully!");
-    }, function(error) {
-      console.log("FAILED...", error);
-      alert("There was an error sending your message. Please try again.");
-    });
-  });
-</script>
+   
   </body>
 </html>
